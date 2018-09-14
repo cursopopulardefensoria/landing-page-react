@@ -3,6 +3,8 @@ import { Card, Button, CardImg, CardTitle, CardText, CardColumns, Row, Col,
  CardSubtitle, CardBody } from 'reactstrap';
 import vakinha from './img/vakinha.png';
 import ConhecaCarousel from './conheca-carousel';
+import links from './links';
+import turma3 from './img/turma3.jpg';
 
 export default (props) => {
   return (
@@ -18,7 +20,7 @@ export default (props) => {
               </Card>
 
               <Card>
-                  <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+                  <CardImg top width="100%" src={turma3} />
               </Card>
 
               <Card>
@@ -39,7 +41,7 @@ export default (props) => {
                   <CardBody>
                       <CardTitle>100% gratuito</CardTitle>
                       <CardText>Todas as nossas aulas são ministradas por professores voluntários e disponibilizadas gratuitamente via internet.</CardText>
-                      <Button color="primary">Assistir aulas online</Button>
+                      <Button href={links.aulasOnline} color="primary">Assistir aulas online</Button>
                   </CardBody>
               </Card>
 
@@ -48,7 +50,9 @@ export default (props) => {
                       <CardTitle>Colabore</CardTitle>
                       <CardText>
                           <p>Junte-se a nós, contribua:</p>
-                          <p><img src={vakinha} className="img-fluid" /></p>
+                          <p><a href={links.vakinha}>
+                                  <img src={vakinha} className="img-fluid" />
+                          </a></p>
                           <p>"Qualquer quantia alimenta nossa luta e faz possível a continuidade dessa empreitada que conta com a contribuição de tanta gente linda!"</p>
                           <p>Sozinhos vamos mais rápido. Juntos vamos mais longe!</p>
                       </CardText>
