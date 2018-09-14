@@ -6,6 +6,7 @@ import {
     Col
 } from 'reactstrap';
 import Social from './social';
+import links from './links';
 
 export default (props) => {
   return (
@@ -19,13 +20,13 @@ export default (props) => {
                 <Row>
                     <Col md="6">
                         <Social
-                            url="https://www.youtube.com/channel/UCW8LLCnZrmVxwSIno-7AI4A"
+                            url={links.youtube}
                             name="cursopopulardefensoria"
                         />
                     </Col>
                     <Col md="6">
                         <Social
-                            url="https://www.instagram.com/cursopopulardefensoria/"
+                            url={links.instagram}
                             name="@cursopopulardefensoria"
                         />
                     </Col>
@@ -33,13 +34,13 @@ export default (props) => {
                 <Row>
                     <Col md="6">
                         <Social
-                            url="https://www.facebook.com/cursopopulardefensoria/"
+                            url={links.facebook}
                             name="/cursopopulardefensoria"
                         />
                     </Col>
                     <Col md="6">
                         <Social
-                            url="https://twitter.com/cursopopulardef"
+                            url={links.twitter}
                             name="@cursopopulardef"
                         />
                     </Col>
