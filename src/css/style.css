@@ -10,6 +10,10 @@ nav a {
     color: inherit;
 }
 
+.jumbotron .main-logo {
+    margin-bottom: 30px;
+}
+
 .card-title {
     background: #B5DA22;
     padding: 10px;
