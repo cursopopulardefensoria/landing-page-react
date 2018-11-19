@@ -31,7 +31,7 @@ export default (props) => {
                           <p>A Coordenação do Curso Popular de Formação de Defensoras e Defensores Públicos torna público o presente edital de seleção de alunos presenciais para o 3º Curso Popular de Formação de Defensoras e Defensores Públicos. O curso tem como objetivo o preparo de candidat@s para os concursos públicos de ingresso às carreiras de Defensorias Públicas, focando-se na população econômico-social mais vulnerável, sem desprezar @s demais interessad@s em conhecer ou vivenciar uma visão mais crítica do Direito.</p>
                           <p>As aulas serão ministradas na sede da Associação dos Servidores da Defensoria Pública do Estado de São Paulo – ASDPESP. As aulas serão gravadas e, posteriormente, disponibilizadas pela internet, possibilitando que qualquer interessad@ as acesse para seu uso pessoal.</p>
                           <p>Todas as atividades do curso e respectivo eventual material didático são gratuitos para @s alun@s, sendo custeados pel@s organizadoras e organizadores do “Curso Popular de Formação de Defensoras e Defensores Públicos” com recursos oriundos de doações.</p>
-                          <Button color="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSf4XpIt0oJl-o-JBFVPrc7ZnjPVGhYAC228ugVX5kgWBybgXA/closedform">
+                          <Button color="secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSf4XpIt0oJl-o-JBFVPrc7ZnjPVGhYAC228ugVX5kgWBybgXA/closedform">
                               Inscrições encerradas
                           </Button>
                       </CardText>
