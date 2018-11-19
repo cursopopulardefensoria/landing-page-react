@@ -2,9 +2,9 @@ import React from 'react';
 import { Card, Button, CardImg, CardTitle, CardText, CardColumns, Row, Col,
  CardSubtitle, CardBody } from 'reactstrap';
 import vakinha from './img/vakinha.png';
-import ConhecaCarousel from './conheca-carousel';
 import links from './links';
 import turma3 from './img/turma3.jpg';
+import InstaFeed from './insta-feed';
 
 export default (props) => {
   return (
@@ -14,27 +14,19 @@ export default (props) => {
               <Card>
                   <CardBody>
                       <CardTitle>Turma presencial</CardTitle>
-                      <CardText>A Coordenação do Curso Popular de Formação de Defensoras e Defensores Públicos torna público o presente edital de seleção de alunos presenciais para o 2° Curso Popular de Formação de Defensoras e Defensores Públicos – Módulo II – 2018.</CardText>
+                      <CardText>
+
+                          <p>A Coordenação do Curso Popular de Formação de Defensoras e Defensores Públicos torna público o presente edital de seleção de alunos presenciais para o 3º Curso Popular de Formação de Defensoras e Defensores Públicos. O curso tem como objetivo o preparo de candidat@s para os concursos públicos de ingresso às carreiras de Defensorias Públicas, focando-se na população econômico-social mais vulnerável, sem desprezar @s demais interessad@s em conhecer ou vivenciar uma visão mais crítica do Direito.</p>
+                          <p>As aulas serão ministradas na sede da Associação dos Servidores da Defensoria Pública do Estado de São Paulo – ASDPESP. As aulas serão gravadas e, posteriormente, disponibilizadas pela internet, possibilitando que qualquer interessad@ as acesse para seu uso pessoal.</p>
+                          <p>Todas as atividades do curso e respectivo eventual material didático são gratuitos para @s alun@s, sendo custeados pel@s organizadoras e organizadores do “Curso Popular de Formação de Defensoras e Defensores Públicos” com recursos oriundos de doações.</p>
+
+                      </CardText>
                       <Button color="primary">Ver edital</Button>
                   </CardBody>
               </Card>
 
               <Card>
                   <CardImg top width="100%" src={turma3} />
-              </Card>
-
-              <Card>
-                  <CardBody>
-                      <CardTitle>Sobre o curso</CardTitle>
-                      <CardText>O curso tem como objetivo o preparo de candidatos para os concursos públicos de ingresso às carreiras de Defensorias Públicas, focando-se na população econômico-social mais vulnerável, sem desprezar as demais interessados em conhecer ou vivenciar uma visão mais crítica do Direito.
-                          As aulas serão ministradas na sede da Associação dos Servidores da Defensoria Pública do Estado de São Paulo – ASDPESP, localizada em Rua Boa Vista, n. 254, sala 1817, Centro, São Paulo/SP, com a seleção de 08 (oito) alun@s para o curso presencial.
-
-                          As aulas serão gravadas e, posteriormente, disponibilizadas pela internet, possibilitando que qualquer interessado as acesse para seu uso pessoal.
-
-                          As inscrições poderão ser feitas no período compreendido entre o dia 05 de janeiro de 2018 ao dia 11 de janeiro de 2018, de forma gratuita. E serão realizadas mediante o preenchimento do formulário, que deverá ser preenchido pelo candidato (a), disponível em: https://goo.gl/forms/CuSxyOwaki6rtjmH3
-                      </CardText>
-                        <Button color="primary">Inscrição para turma presencial</Button>
-                  </CardBody>
               </Card>
 
               <Card>
@@ -47,14 +39,30 @@ export default (props) => {
 
               <Card>
                   <CardBody>
+                      <CardTitle>Instagram</CardTitle>
+                      <InstaFeed/>
+                  </CardBody>
+              </Card>
+
+              <Card>
+                  <CardBody>
                       <CardTitle>Colabore</CardTitle>
                       <CardText>
-                          <p>Junte-se a nós, contribua:</p>
+                          <p>Faça parte dessa corrente que incentiva a democratização do ensino!</p>
                           <p><a href={links.vakinha}>
                                   <img src={vakinha} className="img-fluid" />
                           </a></p>
-                          <p>"Qualquer quantia alimenta nossa luta e faz possível a continuidade dessa empreitada que conta com a contribuição de tanta gente linda!"</p>
+                          <p>"Sem dúvidas a trajetória neste curso possibilita dar os primeiros passos a caminho da crítica e desconstrução de aspectos do ensino jurídico que nos foi passado na academia. Democratizar o acesso ao conhecimento e aos cargos públicos, em especial, o de Defensoras e Defensores Públicos é essencial!"</p>
                           <p>Sozinhos vamos mais rápido. Juntos vamos mais longe!</p>
+                      </CardText>
+                  </CardBody>
+              </Card>
+
+              <Card>
+                  <CardBody>
+                      <CardTitle>Contato</CardTitle>
+                      <CardText>
+                          <p>Para dúvidas e informações sobre o curso, envie e-mail para cursopopulardefensoria@gmail.com</p>
                       </CardText>
                   </CardBody>
               </Card>
@@ -66,21 +74,17 @@ export default (props) => {
                   <CardTitle>Conheça</CardTitle>
                   <CardText>
 
+
                       <p>O projeto consiste em um Curso Popular de Formação de Defensoras e Defensores Públicos, cujo escopo primordial é o preparo para o ingresso à carreira. Todavia, como o próprio nome indica, a proposta do curso não se restringe a esse objetivo. Com efeito, não concebemos uma "visão esquematizada e mastigada do Direito", típica da maioria dos cursos preparatórios atualmente, mas propomos uma visão crítica aos nossos alunos e alunas.</p>
-
                       <p>Além disso, na tentativa de equalizar o acesso à carreira, o curso é destinado a pessoas de baixa renda que não teriam condições de frequentar cursos preparatórios tradicionais.</p>
-
-                      <Row className="justify-content-md-center">
-                          <Col md="9">
-                            <ConhecaCarousel />
-                          </Col>
-                      </Row>
-
-                      <p>Em adição, o curso é inteiramente gratuito e totalmente colaborativo, de modo que há apoio de inúmeras pessoas, as quais se voluntariam a dar aulas, doar livros ou contribuir financeiramente.Estamos situados na Associação dos Servidores da Defensoria Pública. Infelizmente, por ser um espaço pequeno, só podemos oferecer 20 vagas presenciais, porém, para tornar o curso mais acessível, todas as aulas são gravadas e disponibilizadas em nosso canal no Youtube e no sítio do curso, de maneira que qualquer interessado possa assisti-las sem qualquer contrapartida.</p>
+                      <p>Em adição, o curso é inteiramente gratuito e totalmente colaborativo, de modo que há apoio de inúmeras pessoas, as quais se voluntariam a dar aulas, doar livros ou contribuir financeiramente.</p>
+                      <p>Estamos situados na Associação dos Servidores da Defensoria Pública. Infelizmente, por ser um espaço pequeno, só podemos oferecer 20 vagas presenciais, porém, para tornar o curso mais acessível, todas as aulas são gravadas e disponibilizadas em nosso canal no Youtube e no sítio do curso, de maneira que qualquer interessado possa assisti-las sem qualquer contrapartida.</p>
 
                   </CardText>
               </CardBody>
           </Card>
+
+
       </div>
   );
 };
