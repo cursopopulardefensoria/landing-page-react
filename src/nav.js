@@ -1,16 +1,9 @@
 import React from 'react';
 import {
-    Collapse,
     Navbar,
-    NavbarToggler,
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
     Button
 } from 'reactstrap';
 import logoPreto from './img/logo_preto.png';
@@ -42,7 +35,7 @@ export default class MyNav extends React.Component {
                             <Button href={links.aulasOnline} color="secondary">Assistir aulas online</Button>
                         </NavItem>
                         <NavItem className="d-none d-lg-block">
-                            <img src={logoPreto} className="d-inline-block mr-1" />
+                            <img alt="Curso Popular Defensoira" src={logoPreto} className="d-inline-block mr-1" />
                         </NavItem>
                     </Nav>
                 </Navbar>

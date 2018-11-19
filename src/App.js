@@ -5,8 +5,7 @@ import MyNav from './nav';
 import MyJumbo from './jumbo';
 import Content from './content';
 import {
-    Container,
-    Row
+    Container
 } from 'reactstrap';
 
 class App extends Component {

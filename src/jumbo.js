@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
 import logo from './img/logo.png';
 import {
     Row,
@@ -14,7 +14,7 @@ export default (props) => {
       <Jumbotron>
         <Row>
             <Col md="6">
-                <img className="main-logo img-fluid" src={logo} />
+                <img className="main-logo img-fluid" alt="Curso Popular Defensoria" src={logo} />
             </Col>
             <Col md="6" className="align-self-center">
                 <Row>

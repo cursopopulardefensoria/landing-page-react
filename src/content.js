@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card, Button, CardImg, CardTitle, CardText, CardColumns, Row, Col,
- CardSubtitle, CardBody } from 'reactstrap';
+import { Card, Button, CardTitle, CardText, CardColumns, Row, Col, CardBody } from 'reactstrap';
 import vakinha from './img/vakinha.png';
 import links from './links';
 
@@ -58,7 +57,7 @@ export default (props) => {
                           </Row>
                           <p></p>
                           <p><a href={links.vakinha}>
-                                  <img src={vakinha} className="img-fluid" />
+                                  <img src={vakinha} className="img-fluid" alt="Vakinha Curso Popular Defensoria"/>
                           </a></p>
                           <p><a href={links.vakinha}>Gostou do projeto? Colabore!</a></p>
                           <p>"Sem dúvidas a trajetória neste curso possibilita dar os primeiros passos a caminho da crítica e desconstrução de aspectos do ensino jurídico que nos foi passado na academia. Democratizar o acesso ao conhecimento e aos cargos públicos, em especial, o de Defensoras e Defensores Públicos é essencial!"</p>
