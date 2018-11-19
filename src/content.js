@@ -4,7 +4,6 @@ import { Card, Button, CardImg, CardTitle, CardText, CardColumns, Row, Col,
 import vakinha from './img/vakinha.png';
 import links from './links';
 import turma3 from './img/turma3.jpg';
-import InstaFeed from './insta-feed';
 
 export default (props) => {
   return (
@@ -34,13 +33,6 @@ export default (props) => {
                       <CardTitle>100% gratuito</CardTitle>
                       <CardText>Todas as nossas aulas são ministradas por professores voluntários e disponibilizadas gratuitamente via internet.</CardText>
                       <Button href={links.aulasOnline} color="primary">Assistir aulas online</Button>
-                  </CardBody>
-              </Card>
-
-              <Card>
-                  <CardBody>
-                      <CardTitle>Instagram</CardTitle>
-                      <InstaFeed/>
                   </CardBody>
               </Card>
 
