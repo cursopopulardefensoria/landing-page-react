@@ -7,7 +7,6 @@ import links from './links';
 export default (props) => {
   return (
       <div>
-
           <Card className="card-conheca">
               <CardBody>
                   <CardTitle>Conheça</CardTitle>
@@ -45,9 +44,23 @@ export default (props) => {
                       <CardTitle>Colabore</CardTitle>
                       <CardText>
                           <p>Faça parte dessa corrente que incentiva a democratização do ensino!</p>
+                          <Row className="youtube-row">
+                              <Col md="12">
+                                  <div className="embed-responsive embed-responsive-16by9">
+                                      <iframe
+                                          title="youtube-live-stream"
+                                          className="embed-responsive-item"
+                                          src="https://www.youtube.com/embed/HAuxLv4IwGs"
+                                          allow="encrypted-media" allowFullScreen>
+                                      </iframe>
+                                  </div>
+                              </Col>
+                          </Row>
+                          <p></p>
                           <p><a href={links.vakinha}>
                                   <img src={vakinha} className="img-fluid" />
                           </a></p>
+                          <p><a href={links.vakinha}>Gostou do projeto? Colabore!</a></p>
                           <p>"Sem dúvidas a trajetória neste curso possibilita dar os primeiros passos a caminho da crítica e desconstrução de aspectos do ensino jurídico que nos foi passado na academia. Democratizar o acesso ao conhecimento e aos cargos públicos, em especial, o de Defensoras e Defensores Públicos é essencial!"</p>
                           <p>Sozinhos vamos mais rápido. Juntos vamos mais longe!</p>
                       </CardText>
