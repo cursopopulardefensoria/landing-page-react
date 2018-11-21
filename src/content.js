@@ -49,7 +49,7 @@ export default (props) => {
                                       <iframe
                                           title="youtube-live-stream"
                                           className="embed-responsive-item"
-                                          src="https://www.youtube.com/embed/HAuxLv4IwGs"
+                                          src="https://www.youtube.com/embed/vf0AFjW0Zhw"
                                           allow="encrypted-media" allowFullScreen>
                                       </iframe>
                                   </div>
