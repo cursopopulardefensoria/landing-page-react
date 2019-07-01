@@ -8,15 +8,12 @@ export default (props) => {
       <div>
           <Card className="card-conheca">
               <CardBody>
-                  <CardTitle>Inscrições abertas para turma presencial</CardTitle>
+                <CardTitle><small>(01/07/2019)</small> Inscrições abertas para turma presencial</CardTitle>
                   <CardText>
                       <p>
-                          A Comissão de Seleção do Curso Popular de Formação de Defensoras e Defensores
-                          Públicos torna público o presente Edital de seleção de 11 (onze) alunas e alunos, com
-                          respectiva lista de espera, para a modalidade presencial do 3° Curso Popular de
-                          Formação de Defensoras e Defensores Públicos – Módulo II – 1º semestre de 2019.
+                          A Comissão de Seleção do Curso Popular de Formação de Defensoras e Defensores Públicos torna público o presente Edital de seleção de 20 (vinte) alunas e alunos, com respectiva lista de espera, para a modalidade presencial do 4° Curso Popular de Formação de Defensoras e Defensores Públicos – Módulo I - 2º semestre de 2019.
                       </p>
-                      <Button color="primary" href="/Edital de Seleção do 3º Curso Popular Defensoria - Módulo II - 2019.pdf">
+                      <Button color="primary" href="/Edital de Seleção do 4º Curso Popular Defensoria - Módulo I - 2019.docx">
                           Visualizar edital
                       </Button>
                   </CardText>
@@ -46,9 +43,6 @@ export default (props) => {
                       <CardText>
                           <p>As aulas serão ministradas na sede da Associação dos Servidores da Defensoria Pública do Estado de São Paulo – ASDPESP. As aulas serão gravadas e, posteriormente, disponibilizadas pela internet, possibilitando que qualquer interessad@ as acesse para seu uso pessoal.</p>
                           <p>Todas as atividades do curso e respectivo eventual material didático são gratuitos para @s alun@s, sendo custeados pel@s organizadoras e organizadores do “Curso Popular de Formação de Defensoras e Defensores Públicos” com recursos oriundos de doações.</p>
-                            <Button color="primary" href="/Edital de Seleção do 3º Curso Popular Defensoria - Módulo II - 2019.pdf">
-                              Visualizar edital
-                          </Button>
                       </CardText>
                   </CardBody>
               </Card>
