@@ -8,13 +8,15 @@ export default (props) => {
       <div>
           <Card className="card-conheca">
               <CardBody>
-                <CardTitle><small>(2 de janeiro de 2020)</small> Inscrições abertas para turma presencial</CardTitle>
+                <CardTitle><small>(3 de novembro de 2020)</small> Inscrições abertas para turma presencial</CardTitle>
                   <CardText>
-                      <p>
-                        A Comissão de Seleção do Curso Popular de Formação de Defensoras e Defensores Públicos torna público o presente Edital de seleção de 13 (treze) alunas e alunos e formação de lista de espera com 40 (quarenta) vagas para a modalidade presencial do 4° Curso Popular de Formação de Defensoras e Defensores Públicos – Módulo II – 1º semestre de 2020. 
-                      </p>
-                      <Button color="primary" href="/Edital de Seleção do 4º Curso Popular Defensoria - Módulo II - 2020.docx">
+                    <p>O Curso tem como objetivo preparar candidatas e candidatos em situação de vulnerabilidade e hipossuficiência socioeconômica para os concursos públicos de ingresso nas carreiras públicas, em especial da Defensoria Pública.</p>
+                    <p>As aulas abordarão os temas exigidos pelos concursos de Defensoria Pública, tendo como foco o conteúdo programático dos editais das Defensorias Públicas dos Estados e serão ministradas de segunda a sexta-feira à noite e eventualmente aos sábados</p>
+                      <Button color="primary" href="/Edital de Seleção do Curso Popular Defensoria - 2020-10.pdf">
                           Visualizar edital
+                      </Button>
+                      <Button color="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdtQY5YiQRBAESPncSm-A8Btk420HVl4_LHCghtyHxmy8ZLJg/closedform">
+                          Formulário de inscrição
                       </Button>
                   </CardText>
               </CardBody>
