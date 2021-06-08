@@ -8,14 +8,14 @@ export default (props) => {
       <div>
           <Card className="card-conheca">
               <CardBody>
-                <CardTitle><small>(9 de dezembro de 2020)</small> Inscrições prorrogadas para turma presencial</CardTitle>
+                <CardTitle><small>(8 de junho de 2021)</small> Inscrições para turma presencial</CardTitle>
                   <CardText>
                     <p>O Curso tem como objetivo preparar candidatas e candidatos em situação de vulnerabilidade e hipossuficiência socioeconômica para os concursos públicos de ingresso nas carreiras públicas, em especial da Defensoria Pública.</p>
                     <p>As aulas abordarão os temas exigidos pelos concursos de Defensoria Pública, tendo como foco o conteúdo programático dos editais das Defensorias Públicas dos Estados e serão ministradas de segunda a sexta-feira à noite e eventualmente aos sábados</p>
-                      <Button color="primary" href="/Edital Reabertura Curso Popular Defensoria - Dezembro - 2020.pdf">
-                          Visualizar edital prorrogado
+                      <Button color="primary" href="/Edital Curso Popular Defensoria - Junho 2021.pdf">
+                          Visualizar edital
                       </Button>
-                      <Button color="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdtQY5YiQRBAESPncSm-A8Btk420HVl4_LHCghtyHxmy8ZLJg/closedform">
+                      <Button color="primary" href="https://docs.google.com/forms/d/1aKKKMuCJHfekSz5FOtyiuYnvSrHKE8c3UU2C9840bVA">
                           Formulário de inscrição
                       </Button>
                   </CardText>
