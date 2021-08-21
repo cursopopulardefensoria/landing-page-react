@@ -12,11 +12,14 @@ export default (props) => {
                   <CardText>
                     <p>O Curso tem como objetivo preparar candidatas e candidatos em situação de vulnerabilidade e hipossuficiência socioeconômica para os concursos públicos de ingresso nas carreiras públicas, em especial da Defensoria Pública.</p>
                     <p>As aulas abordarão os temas exigidos pelos concursos de Defensoria Pública, tendo como foco o conteúdo programático dos editais das Defensorias Públicas dos Estados e serão ministradas de segunda a sexta-feira à noite e eventualmente aos sábados</p>
-                      <Button color="primary" href="/Edital Curso Popular Defensoria - Junho 2021.pdf">
+                      <Button color="primary" href="/Lista de Aprovados Julho 2021.pdf">
+                          Lista de aprovados
+                      </Button>
+                      <Button color="secondary" href="/Edital Curso Popular Defensoria - Junho 2021.pdf">
                           Visualizar edital
                       </Button>
-                      <Button color="primary" href="https://docs.google.com/forms/d/1aKKKMuCJHfekSz5FOtyiuYnvSrHKE8c3UU2C9840bVA">
-                          Formulário de inscrição
+                      <Button color="secondary" href="https://docs.google.com/forms/d/1aKKKMuCJHfekSz5FOtyiuYnvSrHKE8c3UU2C9840bVA">
+                          Formulário de inscrição (encerrado)
                       </Button>
                   </CardText>
               </CardBody>
