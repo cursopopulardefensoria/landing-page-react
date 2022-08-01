@@ -8,6 +8,21 @@ export default (props) => {
       <div>
           <Card className="card-conheca">
               <CardBody>
+                <CardTitle><small>(agosto de 2022)</small> Inscrições encerradas para turma presencial</CardTitle>
+                  <CardText>
+                    <p>O Curso tem como objetivo preparar candidatas e candidatos em situação de vulnerabilidade e hipossuficiência socioeconômica para os concursos públicos de ingresso nas carreiras públicas, em especial da Defensoria Pública.</p>
+                    <p>As aulas abordarão os temas exigidos pelos concursos de Defensoria Pública, tendo como foco o conteúdo programático dos editais das Defensorias Públicas dos Estados e serão ministradas de segunda a sexta-feira à noite e eventualmente aos sábados</p>
+                      <Button color="secondary" href="/Edital 6ª edição - 2º semestre 2022.pdf">
+                          Visualizar edital
+                      </Button>
+                      <Button color="primary" href="/Lista de aprovados - segundo módulo 2022.docx">
+                          Lista de aprovados
+                      </Button>
+                  </CardText>
+              </CardBody>
+          </Card>
+          <Card className="card-conheca">
+              <CardBody>
                 <CardTitle><small>(março de 2022)</small> Você acompanha o nosso curso?</CardTitle>
                   <CardText>
                     <p>Compartilhe conosco a sua experiência junto ao Curso Popular.</p>
