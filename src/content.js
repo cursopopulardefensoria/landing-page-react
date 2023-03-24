@@ -8,15 +8,12 @@ export default (props) => {
       <div>
           <Card className="card-conheca">
               <CardBody>
-                <CardTitle><small>(agosto de 2022)</small> Inscrições encerradas para turma presencial</CardTitle>
+                <CardTitle><small>(março de 2023)</small> Inscrições abertas para turma presencial</CardTitle>
                   <CardText>
                     <p>O Curso tem como objetivo preparar candidatas e candidatos em situação de vulnerabilidade e hipossuficiência socioeconômica para os concursos públicos de ingresso nas carreiras públicas, em especial da Defensoria Pública.</p>
                     <p>As aulas abordarão os temas exigidos pelos concursos de Defensoria Pública, tendo como foco o conteúdo programático dos editais das Defensorias Públicas dos Estados e serão ministradas de segunda a sexta-feira à noite e eventualmente aos sábados</p>
-                      <Button color="secondary" href="/Edital 6ª edição - 2º semestre 2022.pdf">
+                      <Button color="primary" href="https://docs.google.com/document/d/1g3gkP9FyDXISeoWjGeFxvKz2gDd7mx2z">
                           Visualizar edital
-                      </Button>
-                      <Button color="primary" href="/Lista de aprovados - segundo módulo 2022.docx">
-                          Lista de aprovados
                       </Button>
                   </CardText>
               </CardBody>
@@ -28,21 +25,6 @@ export default (props) => {
                     <p>Compartilhe conosco a sua experiência junto ao Curso Popular.</p>
                       <Button color="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe6zrfgBdXYliUos8H_SP0EFe0QjnmsjqIB6kOQRg9l1XzOEw/viewform">
                           Responder formulário de aprimoramento
-                      </Button>
-                  </CardText>
-              </CardBody>
-          </Card>
-          <Card className="card-conheca">
-              <CardBody>
-                <CardTitle><small>(fevereiro de 2022)</small> Inscrições encerradas para turma presencial</CardTitle>
-                  <CardText>
-                    <p>O Curso tem como objetivo preparar candidatas e candidatos em situação de vulnerabilidade e hipossuficiência socioeconômica para os concursos públicos de ingresso nas carreiras públicas, em especial da Defensoria Pública.</p>
-                    <p>As aulas abordarão os temas exigidos pelos concursos de Defensoria Pública, tendo como foco o conteúdo programático dos editais das Defensorias Públicas dos Estados e serão ministradas de segunda a sexta-feira à noite e eventualmente aos sábados</p>
-                      <Button color="secondary" href="/Edital Curso Popular Defensoria - Dezembro 2021.pdf">
-                          Visualizar edital
-                      </Button>
-                      <Button color="primary" href="/Aprovados 2022.pdf">
-                          Lista de aprovados
                       </Button>
                   </CardText>
               </CardBody>
