@@ -15,10 +15,32 @@ body {
 header {
     background: #1a5f3c;
     color: #fff;
-    padding: 1rem 1.5rem;
+    padding: 0.85rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
-header a { color: #fff; text-decoration: none; font-weight: 600; }
-header .subtitle { font-size: 0.85rem; opacity: 0.8; margin-top: 0.2rem; }
+header .brand a { color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem; }
+header .subtitle { font-size: 0.82rem; opacity: 0.75; margin-top: 0.15rem; }
+.open-data-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #f0a500;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 0.82rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+    transition: opacity 0.15s;
+    flex-shrink: 0;
+}
+.open-data-btn:hover { opacity: 0.88; }
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -107,6 +129,65 @@ h3 { font-size: 1rem; color: #444; margin: 1.25rem 0 0.5rem; font-weight: 600; }
 }
 .topic-description p { margin: 0.3rem 0; }
 .topic-description a { color: #1a5f3c; }
+.info-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.25rem 1.4rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border-left: 4px solid #1a5f3c;
+}
+.info-card h3 { margin-top: 0; color: #1a5f3c; font-size: 1rem; margin-bottom: 0.6rem; }
+.info-card p { font-size: 0.92rem; color: #444; margin-bottom: 0.5rem; line-height: 1.6; }
+.info-card p:last-child { margin-bottom: 0; }
+.info-card a { color: #1a5f3c; }
+.download-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.25rem 1.4rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border-left: 4px solid #f0a500;
+}
+.download-card h3 { margin-top: 0; font-size: 1rem; margin-bottom: 0.6rem; }
+.download-card p { font-size: 0.88rem; color: #555; margin-bottom: 0.75rem; }
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: #1a5f3c;
+    color: #fff;
+    padding: 0.45rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    margin-bottom: 0.35rem;
+}
+.download-btn:hover { opacity: 0.88; }
+.hero-banner {
+    background: linear-gradient(135deg, #1a5f3c 0%, #2d8a5e 100%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1.75rem 1.5rem;
+    margin-bottom: 2rem;
+}
+.hero-banner h1 { color: #fff; font-size: 1.5rem; margin-bottom: 0.5rem; }
+.hero-banner p { opacity: 0.9; font-size: 0.95rem; line-height: 1.6; }
+.stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+.stat-chip {
+    background: rgba(255,255,255,0.18);
+    border-radius: 20px;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
 footer {
     text-align: center;
     padding: 2rem 1rem;
@@ -118,14 +199,16 @@ footer {
 </head>
 <body>
 <header>
-  <div><a href="../index.html">Curso Popular Defensoria — Arquivo de Aulas</a></div>
-  <div class="subtitle">Arquivo estático das aulas públicas do Moodle</div>
+  <div class="brand">
+    <div><a href="../index.html">Curso Popular Defensoria — Arquivo de Aulas</a></div>
+    <div class="subtitle">Arquivo público das aulas do Moodle · Dados abertos</div>
+  </div>
+  <a class="open-data-btn" href="../exportacao/">&#128194; Dados Abertos &amp; Exportação</a>
 </header>
 <main>
 <a class="back-link" href="../index.html">← Voltar ao índice</a>
 <h1>Infância e Juventude</h1>
 <p style='color:#666; font-size:0.9rem; margin-top:0.25rem;'>5ª Edição - 2021</p>
-<p style='margin-top:0.5rem; font-size:0.82rem; color:#999;'>Fonte: <a href='http://env1.cursopopulardefensoria.com.br/course/view.php?id=108' target='_blank' rel='noopener' style='color:#999;'>Moodle original</a></p>
 <div class="topic-section">
 <h3>Tópico 1</h3>
 <div class="video-wrapper">
@@ -229,8 +312,10 @@ footer {
 
 </main>
 <footer>
-  Arquivo estático do Curso Popular Defensoria Pública.
-  Os vídeos são hospedados no YouTube e os materiais no S3/Google Drive — acessíveis independentemente deste arquivo.
+  Arquivo público do Curso Popular Defensoria Pública —
+  <a href="https://github.com/cursopopulardefensoria/landing-page-react" target="_blank" rel="noopener" style="color:#aaa;">código aberto no GitHub</a>.
+  Vídeos no YouTube gerenciados pela equipe do Curso Popular.
+  Materiais no AWS S3 mantido por Rafael Santos.
 </footer>
 </body>
 </html>
