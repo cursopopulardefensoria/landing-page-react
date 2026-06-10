@@ -310,7 +310,7 @@ async function revealEmail() {
     var key = new Uint8Array(bits);
     var enc = new Uint8Array([149, 28, 23, 73, 249, 60, 79, 209, 237, 175, 200, 15, 239, 227, 134, 161, 19, 181, 113, 14, 84, 182, 135, 47, 159, 130, 102]);
     var email = String.fromCharCode.apply(null, enc.map(function(b,i){ return b ^ key[i]; }));
-    status.textContent = '&#10003; Verificado!';
+    status.textContent = '✓ Verificado!';
     result.innerHTML = '<a href="mailto:' + email + '" style="font-family:monospace;font-size:1rem;color:#1a5f3c;">' + email + '</a>';
     btn.style.display = 'none';
   } catch(e) {
