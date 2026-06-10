@@ -24,6 +24,10 @@ header {
 }
 header .brand a { color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem; }
 header .subtitle { font-size: 0.82rem; opacity: 0.75; margin-top: 0.15rem; }
+.breadnav { font-size: 0.78rem; opacity: 0.7; margin-top: 0.2rem; }
+.breadnav a { color: #fff; text-decoration: none; }
+.breadnav a:hover { text-decoration: underline; }
+.breadnav span { margin: 0 0.3rem; opacity: 0.6; }
 .open-data-btn {
     display: inline-flex;
     align-items: center;
@@ -201,7 +205,12 @@ footer {
 <header>
   <div class="brand">
     <div><a href="../index.html">Curso Popular Defensoria — Arquivo de Aulas</a></div>
-    <div class="subtitle">Arquivo público das aulas do Moodle · Dados abertos</div>
+    <div class="breadnav">
+      <a href="/">cursopopulardefensoria.com.br</a>
+      <span>›</span>
+      <a href="../index.html">Arquivo de Aulas</a>
+      <span>›</span><span>Direito Constitucional</span>
+    </div>
   </div>
   <a class="open-data-btn" href="../exportacao/">&#128194; Dados Abertos &amp; Exportação</a>
 </header>
