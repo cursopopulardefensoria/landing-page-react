@@ -270,9 +270,56 @@ footer {
   <h3>&#128232; Conteúdo faltando ou dúvidas?</h3>
   <p>Se você perceber algum conteúdo faltando, um link quebrado ou tiver qualquer dúvida
   sobre o arquivo, entre em contato com Rafael Santos:</p>
-  <p style="font-family: monospace; font-size: 0.95rem;">rafael.santos.193 [arroba] gmail.com</p>
-  <p style="font-size:0.82rem; color:#888;">Substitua <strong>[arroba]</strong> por @ para obter o endereço completo.</p>
+  <div id="email-box" style="margin:1rem 0;">
+    <button id="reveal-btn" onclick="revealEmail()" style="
+        cursor:pointer; background:#1a5f3c; color:#fff;
+        border:none; border-radius:6px; padding:0.55rem 1.1rem;
+        font-size:0.92rem; font-weight:600; display:inline-flex;
+        align-items:center; gap:0.4rem;">
+      &#128274; Revelar e-mail (prova de trabalho ~3s)
+    </button>
+    <div id="reveal-status" style="font-size:0.82rem;color:#666;margin-top:0.5rem;"></div>
+    <div id="reveal-result" style="margin-top:0.5rem;"></div>
+  </div>
+  <p style="font-size:0.78rem;color:#aaa;">
+    O e-mail é protegido por uma prova de trabalho criptográfica (PBKDF2, 600 mil iterações).
+    Seu navegador resolve o puzzle localmente — nenhum dado é enviado a servidores.
+  </p>
 </div>
+<script>
+async function revealEmail() {
+  var btn = document.getElementById('reveal-btn');
+  var status = document.getElementById('reveal-status');
+  var result = document.getElementById('reveal-result');
+  btn.disabled = true;
+  btn.innerHTML = '&#9203; Calculando... aguarde';
+  status.textContent = 'Seu navegador está resolvendo um puzzle criptográfico. Isso leva alguns segundos e protege o e-mail de bots.';
+  await new Promise(function(r){ setTimeout(r, 30); });
+  try {
+    var km = await crypto.subtle.importKey(
+      'raw',
+      new TextEncoder().encode('reveal-email'),
+      'PBKDF2', false, ['deriveBits']
+    );
+    var bits = await crypto.subtle.deriveBits(
+      {name:'PBKDF2', hash:'SHA-256',
+        salt: new TextEncoder().encode('cursopopulardefensoria-2026'),
+        iterations: 600000},
+      km, 256
+    );
+    var key = new Uint8Array(bits);
+    var enc = new Uint8Array([149, 28, 23, 73, 249, 60, 79, 209, 237, 175, 200, 15, 239, 227, 134, 161, 19, 181, 113, 14, 84, 182, 135, 47, 159, 130, 102]);
+    var email = String.fromCharCode.apply(null, enc.map(function(b,i){ return b ^ key[i]; }));
+    status.textContent = '&#10003; Verificado!';
+    result.innerHTML = '<a href="mailto:' + email + '" style="font-family:monospace;font-size:1rem;color:#1a5f3c;">' + email + '</a>';
+    btn.style.display = 'none';
+  } catch(e) {
+    status.textContent = 'Erro: ' + e.message;
+    btn.disabled = false;
+    btn.innerHTML = '&#128274; Revelar e-mail (prova de trabalho ~3s)';
+  }
+}
+</script>
 
 </main>
 <footer>
